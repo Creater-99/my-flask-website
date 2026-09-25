@@ -6,4 +6,5 @@ app = Flask(__name__, static_folder="downloads")
 def hello_world():
     return render_template("index.html")
 
-app.run(port=8000, debug=True)
+if __name__ == "__main__":
+    app.run(port=8000, debug=True)
